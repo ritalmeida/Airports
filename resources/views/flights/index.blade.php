@@ -38,6 +38,8 @@
             <form action="{{ route('flights.destroy',$flight->id) }}" method="POST">
 
                 <a class="btn btn-info" href="{{ route('flights.show',$flight->id) }}">Show</a>
+
+                <a class="btn btn-primary" href="{{ route('flights.edit',$flight->id) }}">Edit</a>
                 @csrf
                 @method('DELETE')
 

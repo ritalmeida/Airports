@@ -13,11 +13,11 @@ class TestController extends Controller
 
     public function airport() {
 
-        return view('airports.show');
+        return view('airports.index');
     }
 
     public function flight() {
 
-        return view('flights.show');
+        return view('flights.index');
     }
 }

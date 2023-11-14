@@ -30,8 +30,8 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" value="{{ $airport->name }}" class="form-control" placeholder="Name">
+                <strong>Reference:</strong>
+                <input type="text" name="reference" value="{{ $flight->reference }}" class="form-control" placeholder="Reference">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
