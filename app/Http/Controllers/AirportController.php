@@ -59,6 +59,7 @@ class AirportController extends Controller
      */
     public function show(Airport $airport)
     {
+        $airport = Airport::all();
         return view('airports.show', compact('airport'));
     }
 

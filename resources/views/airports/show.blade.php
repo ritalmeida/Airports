@@ -32,26 +32,4 @@
         </div>
     </div>
 </div>
-
-<h1>Current Plane in the airport</h1>
-<table class="table table-bordered">
-    <tr>
-        <th>No</th>
-        <th>Reference</th>
-        <th>Brand</th>
-        <th>Capacity</th>
-        <th>Airport ID</th>
-        <th width="280px">Action</th>
-    </tr>
-    @foreach ($airport->flights as $flight)
-    <tr>
-        <td>{{ $flight->id }}</td>
-        <td>{{ $flight->reference }}</td>
-        <td>{{ $flight->brand }}</td>
-        <td>{{ $flight->capacity }}</td>
-        <td>{{ $flight->airport->name }}</td>
-        <td><a class="btn btn-info" href="{{ route('flights.show',$flight->id) }}">Show</a></td>
-    </tr>
-    @endforeach
-</table>
 @endsection
